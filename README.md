@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE : 15/02/2024
+## NAME : PREMJI P																			             
+## ROLLNUMBER : 212221043004
+## DEPARTMENT : CSE
 
 
 ## AIM:
@@ -52,7 +52,8 @@ FIGURE-02
 ## CIRCUIT DIAGRAM 
 
 
-![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
+
+![1](https://github.com/nagaraj6618/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/127173574/bbbe8047-594b-413c-8997-be656165952b)
 
 
 
@@ -62,9 +63,25 @@ FIGURE -03
 
 
 ## PROGRAM 
- 
- 
+```c
+#define LED_PIN 8
+#define BUTTON_PIN 7
 
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT);
+}
+
+void loop() {
+  if (digitalRead(BUTTON_PIN) == HIGH) {
+    digitalWrite(LED_PIN, HIGH);
+  }
+  else {
+    digitalWrite(LED_PIN, LOW);
+  }
+} 
+ 
+```
 
 
 
@@ -80,6 +97,13 @@ FIGURE -03
 
 
 ## OUTPUT OF SIMULATION :
+![1](https://github.com/nagaraj6618/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/127173574/39bd2e23-093b-4b58-8e5d-044e11c44370)
 
-[My image](username.github.com/repository/img/image.jpg)
 
+
+![Screenshot (30)](https://github.com/premjivip/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/143831886/d1c44c17-8393-4001-a7b9-218551ef5299)
+
+
+
+## RESULT :
+	Interfacing with Push button and LED was executed successfully.
